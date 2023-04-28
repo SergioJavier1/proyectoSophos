@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>Gestion de clientes:</h2>
-    <h4>Guardar cliente</h4>
+    <h4 class="text-primary">Guardar cliente</h4>
     <div class="container">
         <form>
             <div class="row">
@@ -24,30 +24,99 @@
 
             <div class="row">
                 <div class="col-6 form-group">
-                    <label for="Nombre">Edad</label>
-                    <input type="text" class="form-control" id="Nombre" placeholder="Solo nombre(s)">
+                    <label for="Edad">Edad</label>
+                    <input type="text" class="form-control" id="Edad" placeholder="Numerica">
                 </div>
                 <div class="col-6 form-group">
-                    <label for="Apellido">Telefono</label>
-                    <input type="text" class="form-control" id="Apellido" placeholder="Solo apellidos(s)">
+                    <label for="Telefono">Telefono</label>
+                    <input type="text" class="form-control" id="Telefono" placeholder="10 digitos">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="row">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
         </form>
     </div>
 
     <h2>Gestion de videojuegos:</h2>
-    <h4>Lista de videojuegos:</h4>
-    <h4>Cambiar precio de alquiler</h4>
-    <h4>Generar renta:</h4>
+    <h4 class="text-primary">Lista de videojuegos:</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID del videojuego</th>
+                <th scope="col">Nombre del videojuego</th>
+                <th scope="col">Director</th>
+                <th scope="col">Productor</th>
+                <th scope="col">Protagonista</th>
+                <th scope="col">Fecha de lanzamiento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>y</td>
+                <td>xxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xx</td>
+                <td>xx</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 class="text-primary">Cambiar precio de alquiler</h4>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-6 form-group">
+                    <label for="IdVideojuego">Id del videojuego</label>
+                    <input type="text" class="form-control" id="IdVideojuego">
+                </div>
+                <div class="col-6 form-group">
+                    <label for="NuevoPrecio">Nuevo precio</label>
+                    <input type="text" class="form-control" id="NuevoPrecio" placeholder="Solo numeros">
+                </div>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
+    <h4 class="text-primary">Generar renta:</h4>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-6 form-group">
+                    <label for="Nombre">ID del cliente</label>
+                    <input type="text" class="form-control" id="Nombre" placeholder="Numerico">
+                </div>
+                <div class="col-6 form-group">
+                    <label for="Apellido">Id del videojuego</label>
+                    <input type="text" class="form-control" id="Apellido" placeholder="Numerico">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 form-group">
+                    <label for="Dias">Cantidad de dias</label>
+                    <input type="text" class="form-control" id="Dias" placeholder="Numerica">
+                </div>
+                <div class="col-6 form-group">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
     <h2>Gestion diaria</h2>
-    <h4>Ventas del dia</h4>
-
+    <h4 class="text-primary">Ventas del dia</h4>
+    <p class="text-info">.text-info</p>
     <h2>Datos adicionales</h2>
-    <h4>Cliente mas frecuente</h4>
-    <h4>Videojuego mas rentado</h4>
-    <h4>Videojuego menos rentado por rango</h4>
+    <h4 class="text-primary">Cliente mas frecuente</h4>
+    <p class="text-info">.text-info</p>
+    <h4 class="text-primary">Videojuego mas rentado</h4>
+    <p class="text-info">.text-info</p>
+    <h4 class="text-primary">Videojuego menos rentado por rango</h4>
+    <p class="text-info">.text-info</p>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </html>
